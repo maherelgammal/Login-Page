@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e51e55f56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="full-page py-5">
+        <div class="login-page m-auto container p-5 ">
+            <div>
+                <h1 class="text-center py-3">Smart Login System</h1>
+                <input type="email" name="email" id="loginEmail" placeholder="Enter Your Email" class="form-control my-3 bg-transparent text-white">
+                <input type="password" name="password" id="loginPassword" placeholder="Enter Your Password" class="form-control my-3 bg-transparent text-white">
+                <p id="wrongLogin" class="text-danger text-center"></p>
+                <button type="submit" id="loginClick" class="form-control my-3 bg-transparent btn">Login</button>
+            </div>
+            <p class="text-center text-white">Don’t have an account? <a href='#' id="signup" class="text-white text-decoration-none">Sign Up</a> </p>
+        </div>
+        <div class="signup-page m-auto container p-5 d-none">
+            <div>
+                <h1 class="text-center py-3">Smart Login System</h1>
+                <input type="text" name="name" id="SUName" placeholder="Enter Your Name" class="form-control my-3 bg-transparent text-white">
+                <input type="email" name="email" id="SUEmail" placeholder="Enter Your Email" class="form-control my-3 bg-transparent text-white">
+                <input type="password" name="password" id="SUPassword" placeholder="Enter Your Password" class="form-control my-3 bg-transparent text-white">
+                <p id="correctSignup" class="text-success text-center"></p>
+                <p id="wrongSignup" class="text-danger text-center"></p>
+                <button type="submit" id="signUpClick" class="form-control my-3 bg-transparent btn">Sign Up</button>
+            </div>
+            <p class="text-center text-white">You have an account? <a href="#" id="signin" class="text-white text-decoration-none">Sign In</a> </p>
+        </div>
+        <div class="home-page d-flex justify-content-center align-items-center position-absolute top-0 w-100 d-none">
+            <div class="bar align-self-start w-100 position-absolute end-0">
+                <div class="px-5 py-3 d-flex justify-content-between container">
+                    <a href="" class="text-decoration-none text-white fs-3">SMART LOGIN</a>
+                    <button id="logout" class="btn btn-outline-warning">Log Out</button>
+                </div>
+            </div>
+            <div class="welcome-mess w-50 m-auto d-flex justify-content-center align-items-center p-5">
+                <p class="fs-2" id="welcome-mess"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
