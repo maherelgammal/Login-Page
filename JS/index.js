@@ -17,6 +17,7 @@ if (localStorage.getItem("users") != null){
 
 signUp.addEventListener("click",function(){
     changePages();
+    clearRedComment();
     clearGreenComment();
 })
 signIn.addEventListener("click",function(){
